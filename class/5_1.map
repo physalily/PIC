@@ -1,0 +1,54 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Tue Jun 19 10:17:11 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000004    program   0x000012
+       .config_2007_5_1.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000004    0x00000c      
+                            0x002007    0x002007      
+            11 out of 1094 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                       A4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       B4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       C4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       D4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       E4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                  ENDNOTE   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       F4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       G4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                     INIT   0x000005    program     static C:\Code\Assembler\class\5_1.asm
+                   MELODY   0x00000b    program     static C:\Code\Assembler\class\5_1.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     INIT   0x000005    program     static C:\Code\Assembler\class\5_1.asm
+                   MELODY   0x00000b    program     static C:\Code\Assembler\class\5_1.asm
+                       A4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       B4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       C4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       D4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       E4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                  ENDNOTE   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       F4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+                       G4   0x00000c    program     static C:\Code\Assembler\class\5_1.asm
+
+

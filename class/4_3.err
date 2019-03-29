@@ -1,0 +1,4 @@
+Message[302] C:\CODE\ASSEMBLER\CLASS\4_3.ASM 21 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\CODE\ASSEMBLER\CLASS\4_3.ASM 22 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] C:\CODE\ASSEMBLER\CLASS\4_3.ASM 64 : Using default destination of 1 (file).
+Message[305] C:\CODE\ASSEMBLER\CLASS\4_3.ASM 76 : Using default destination of 1 (file).

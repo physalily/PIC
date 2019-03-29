@@ -1,0 +1,46 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Wed Jul 18 09:19:09 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000002
+                   .org_2       code   0x000004    program   0x000122
+       .config_2007_7_1.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000000      
+                            0x000004    0x000094      
+                            0x002007    0x002007      
+            147 out of 1094 program addresses used, program memory utilization is 13%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      BCD   0x00002f    program     static C:\Code\Assembler\class\7_1.asm
+                     MAIN   0x000013    program     static C:\Code\Assembler\class\7_1.asm
+                   MAINLP   0x00001f    program     static C:\Code\Assembler\class\7_1.asm
+                    OTHER   0x00000e    program     static C:\Code\Assembler\class\7_1.asm
+                      POP   0x00000e    program     static C:\Code\Assembler\class\7_1.asm
+                   TIME01   0x00002a    program     static C:\Code\Assembler\class\7_1.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    OTHER   0x00000e    program     static C:\Code\Assembler\class\7_1.asm
+                      POP   0x00000e    program     static C:\Code\Assembler\class\7_1.asm
+                     MAIN   0x000013    program     static C:\Code\Assembler\class\7_1.asm
+                   MAINLP   0x00001f    program     static C:\Code\Assembler\class\7_1.asm
+                   TIME01   0x00002a    program     static C:\Code\Assembler\class\7_1.asm
+                      BCD   0x00002f    program     static C:\Code\Assembler\class\7_1.asm
+
+

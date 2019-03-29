@@ -1,0 +1,62 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Sun Jun 03 21:14:42 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x0000a0
+       .config_2007_4_3.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00004f      
+                            0x002007    0x002007      
+            81 out of 1094 program addresses used, program memory utilization is 7%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     INIT   0x000000    program     static C:\Code\Assembler\class\4_3.asm
+                  LIGHT_A   0x00001d    program     static C:\Code\Assembler\class\4_3.asm
+                  LIGHT_B   0x000035    program     static C:\Code\Assembler\class\4_3.asm
+                    LOOP1   0x00003f    program     static C:\Code\Assembler\class\4_3.asm
+                    LOOP2   0x000046    program     static C:\Code\Assembler\class\4_3.asm
+                    LOOP3   0x00004c    program     static C:\Code\Assembler\class\4_3.asm
+                      LSH   0x00002a    program     static C:\Code\Assembler\class\4_3.asm
+                     LSHR   0x000032    program     static C:\Code\Assembler\class\4_3.asm
+                 MAINLOOP   0x00000e    program     static C:\Code\Assembler\class\4_3.asm
+                  OUTPUTS   0x000016    program     static C:\Code\Assembler\class\4_3.asm
+                      RSH   0x000022    program     static C:\Code\Assembler\class\4_3.asm
+                     SKIP   0x00003b    program     static C:\Code\Assembler\class\4_3.asm
+                 TIME100U   0x00003b    program     static C:\Code\Assembler\class\4_3.asm
+                  TIME10M   0x000042    program     static C:\Code\Assembler\class\4_3.asm
+                  TIME50M   0x00004a    program     static C:\Code\Assembler\class\4_3.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     INIT   0x000000    program     static C:\Code\Assembler\class\4_3.asm
+                 MAINLOOP   0x00000e    program     static C:\Code\Assembler\class\4_3.asm
+                  OUTPUTS   0x000016    program     static C:\Code\Assembler\class\4_3.asm
+                  LIGHT_A   0x00001d    program     static C:\Code\Assembler\class\4_3.asm
+                      RSH   0x000022    program     static C:\Code\Assembler\class\4_3.asm
+                      LSH   0x00002a    program     static C:\Code\Assembler\class\4_3.asm
+                     LSHR   0x000032    program     static C:\Code\Assembler\class\4_3.asm
+                  LIGHT_B   0x000035    program     static C:\Code\Assembler\class\4_3.asm
+                     SKIP   0x00003b    program     static C:\Code\Assembler\class\4_3.asm
+                 TIME100U   0x00003b    program     static C:\Code\Assembler\class\4_3.asm
+                    LOOP1   0x00003f    program     static C:\Code\Assembler\class\4_3.asm
+                  TIME10M   0x000042    program     static C:\Code\Assembler\class\4_3.asm
+                    LOOP2   0x000046    program     static C:\Code\Assembler\class\4_3.asm
+                  TIME50M   0x00004a    program     static C:\Code\Assembler\class\4_3.asm
+                    LOOP3   0x00004c    program     static C:\Code\Assembler\class\4_3.asm
+
+

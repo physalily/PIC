@@ -1,0 +1,172 @@
+MPASM  5.51                          6_2_.ASM   6-20-2018  23:52:43         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (LIST)
+Error[124]  : Illegal argument (P-PIC16F84Ailistdirectivetodefineprocessor)
+                      00001 LIST P-PIC 16F84A i list directive to define processor
+Error[105]  : Cannot open file (Include File "<P 16F84A INC>, processor specific variable definitions.ASM" not found)
+                      00002 #INCLUDE <P 16F84A INC>, processor specific variable definitions
+Error[108]  : Illegal character ([)
+                      00003 [CONFIG-HS-OSC&-CP-OFF & _WDT-OFF & _PWRTE-ON
+Error[122]  : Illegal opcode (TEMP)
+                      00004 W TEMP
+Error[122]  : Illegal opcode (TEMP)
+                      00005 STATUS TEMP
+0000                  00006 TMP
+0000                  00007 FLG1
+0000                  00008 FLG2
+Warning[205]: Found directive in column 1. (EQU)
+Error[111]  : Missing symbol
+                      00009 EQU 0CH
+Warning[205]: Found directive in column 1. (EQU)
+Error[111]  : Missing symbol
+                      00010 EQU ODH
+Warning[205]: Found directive in column 1. (EQU)
+Error[111]  : Missing symbol
+                      00011 EQU 0EH
+0000                  00012 EQUOFH
+Warning[205]: Found directive in column 1. (EQU)
+Error[111]  : Missing symbol
+                      00013 EQU 10H
+Warning[205]: Found directive in column 1. (ORG)
+Error[113]  : Symbol not previously defined (OH)
+Error[113]  : Symbol not previously defined (OH)
+0000                  00014 ORG OH
+Warning[203]: Found opcode in column 1. (GOTO)
+Error[113]  : Symbol not previously defined (MAIN)
+0000   2800           00015 GOTO MAIN
+0001                  00016 ORG04H
+0001                  00017 PUSH
+Warning[203]: Found opcode in column 1. (MOVWF)
+Error[113]  : Symbol not previously defined (W_TEMP)
+0001   0080           00018 MOVWF W_TEMP
+Warning[203]: Found opcode in column 1. (MOVF)
+Error[113]  : Symbol not previously defined (STATUS)
+0002   0800           00019 MOVF STATUS, W
+Warning[203]: Found opcode in column 1. (MOVWF)
+Error[113]  : Symbol not previously defined (STATUS_TEMP)
+0003   0080           00020 MOVWF STATUS_TEMP
+Warning[203]: Found opcode in column 1. (MOVF)
+Error[113]  : Symbol not previously defined (PORTB)
+0004   0800           00021 MOVF PORTB, W
+Warning[203]: Found opcode in column 1. (MOVWF)
+0005   0080           00022 MOVWF TMP
+Warning[205]: Found directive in column 1. (If)
+Error[113]  : Symbol not previously defined (RB51)
+                      00023 If RB51
+MPASM  5.51                          6_2_.ASM   6-20-2018  23:52:43         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00024 i FLG21=FLG2
+                      00025 BTFSC TMP, 5
+                      00026 COMF FLG2, F
+                      00027 BTFSC TMP, 4
+                      00028 COMF FLG1, F
+                      00029 ; FLGTE FLGI
+                      00030 POP
+                      00031 MOVF STATUS_TEMP, W
+                      00032 MOVWF STATUS
+                      00033 SWAPF W TEMP, F
+                      00034 SWAPF W TEMP, W
+                      00035 BCF INTCON, RBIF clear RB interrupt flag
+                      00036 RETFIE
+                      00037 REMAINING CODE GOES HERE
+                      00038 MAIN
+                      00039 BCF INTCON, GIE
+                      00040 BSF STATUS, RPO
+                      00041 CLRF TRISA
+                      00042 MOVLW 030H
+                      00043 MOVWF TRISB
+                      00044 , Disable interrupts
+                      00045 Bank1
+                      00046 RA->Output
+                      00047 RB7:6->Output,
+                      00048 , RB5:4->Input,
+                      00049 : RB3:0>Output
+                      00050 BCF
+                      00051 CLRF
+                      00052 CLRF FLG1
+                      00053 CLRF FLG2
+                      00054 CLRF TMP
+                      00055 BSF
+                      00056 BSF
+                      00057 BCF
+                      00058 STATUS, RPO
+                      00059 PORTA
+                      00060 , Bank0
+                      00061 All RA->Low
+                      00062 INTCON, RBIE
+                      00063 INTCON, GIE
+                      00064 NTCON, RBIF
+                      00065 Enable RB interrupts
+                      00066 ; Enable interrupts
+                      00067 ; Clear RB interrupts flag
+                      00068 LOOP
+                      00069 BTFSC FLG1
+                      00070 BSF
+                      00071 BTFSS FLG1
+                      00072 BCF
+                      00073 ; if FLG1 <0> = 1
+                      00074 RAO 1
+                      00075 RAO 0
+                      00076 if FLG2<0>
+MPASM  5.51                          6_2_.ASM   6-20-2018  23:52:43         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00077 TMP
+                      00078 else
+                      00079 TMP
+                      00080 BTFSC FLG2, 0
+                      00081 BSF
+                      00082 BTFSS FLG2, 0
+                      00083 BCF
+                      00084 1
+                      00085 TMP
+                      00086 RA1 1
+                      00087 , else
+                      00088 TMP,
+                      00089 RA1 0
+                      00090 MOVFW TMP
+                      00091 MOVWF PORTA
+                      00092 GOTO LOOP
+Warning[212]: Expected (ENDIF)
+                      00093 END
+MPASM  5.51                          6_2_.ASM   6-20-2018  23:52:43         PAGE  4
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+EQUOFH                            00000000
+FLG1                              00000000
+FLG2                              00000000
+ORG04H                            00000001
+PUSH                              00000001
+TMP                               00000000
+__16F84A                          00000001
+
+
+MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
+
+0000 : XXXXXX---------- ---------------- ---------------- ----------------
+
+All other memory blocks unused.
+
+Program Memory Words Used:     6
+Program Memory Words Free:  1018
+
+
+Errors   :    17
+Warnings :    14 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+
